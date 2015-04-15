@@ -321,6 +321,11 @@ source /usr/local/bin/virtualenvwrapper.sh
 set -o vi
 
 EOT
+
+cat <<EOT > .zprofile
+export EDITOR=vim
+
+EOT
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 sudo apt-get update -y
