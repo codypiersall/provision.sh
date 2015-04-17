@@ -326,6 +326,15 @@ cat <<EOT > .zprofile
 export EDITOR=vim
 
 EOT
+
+# vrapper is a plugin for Eclipse to give Vim keybindings.
+cat <<EOT > .vrapperrc
+inoremap jk <Esc>
+set tabstop=4
+set shiftwidth=4
+set expandtab
+
+EOT
 curl -L https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh | sh
 
 sudo apt-get update -y
