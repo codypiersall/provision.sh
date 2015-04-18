@@ -312,13 +312,12 @@ source \$ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # Make vim not take forever to enter command mode
-export KEYTIMEOUT=1
+export KEYTIMEOUT=10
+bindkey -M viins 'jk' vi-cmd-mode
 
 # virtual environment
 export WORKON_HOME=\$HOME/.venvs
 source /usr/local/bin/virtualenvwrapper.sh
-
-set -o vi
 
 EOT
 
