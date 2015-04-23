@@ -319,6 +319,7 @@ bindkey -M viins 'jk' vi-cmd-mode
 export WORKON_HOME=\$HOME/.venvs
 source /usr/local/bin/virtualenvwrapper.sh
 
+alias vless=/usr/share/vim/vim74/macros/less.sh
 EOT
 
 cat <<EOT > .zprofile
