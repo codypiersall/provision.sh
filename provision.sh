@@ -112,6 +112,7 @@ set nowrap
 set showcmd         " Show (partial) command in status line.
 
 set number          " Show line numbers.
+set relativenumber  " Show relative line numbers.
 
 set showmatch       " When a bracket is inserted, briefly jump to the matching
                     " one. The jump is only done if the match can be seen on the
